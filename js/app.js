@@ -1,1 +1,2 @@
-console.log('test');
+// Require all css
+require("bootstrap-webpack");
