@@ -1,6 +1,10 @@
+var path = require("path");
+
 module.exports = {
-    entry: './app.js',
+    context: path.resolve('js'),
+    entry: './app',
     output: {
+        path: path.resolve('build/js'),
         filename: 'bundle.js'
     },
     module: {
@@ -10,5 +14,8 @@ module.exports = {
             {test: /\.css$/, loader: 'style-loader!css-loader'},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'} // inline base64 URLs for <=8k images, direct URLs for the rest
         ]
+    },
+    resolve: {
+        extensions: ['', '.js']
     }
 };
