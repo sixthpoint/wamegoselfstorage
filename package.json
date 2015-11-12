@@ -1,0 +1,27 @@
+{
+    "name": "WamegoSelfStorage",
+    "description": "Site designed in webpack",
+    "version": "0.0.1",
+    "main": "./app.js",
+    "author": {
+        "name": "Brandon Klimek",
+        "email": "sixthpoint@gmail.com"
+    },
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/sixthpoint/WamegoSelfStorage.git"
+    },
+    "bugs": {
+        "url": "http://github.com/sixthpoint/WamegoSelfStorage/issues"
+    },
+    "devDependencies": {
+        "css-loader": "^0.22.0",
+        "file-loader": "^0.8.4",
+        "less": "^2.5.3",
+        "less-loader": "^2.2.1",
+        "style-loader": "^0.13.0",
+        "url-loader": "^0.5.6",
+        "webpack-dev-server": "^1.12.1"
+    }
+}
