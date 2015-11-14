@@ -1,10 +1,10 @@
 // Require all css
 //require("bootstrap-webpack");
-require("../css/css/bootstrap.css");
+require("../css/bootstrap.css");
 require("../css/styles.css");
 
 // BootstrapJS
-require("../js/bootstrap/bootstrap.js");
+require("../js/libs/bootstrap.js");
 
 // Load backboneJS router
 var Workspace = require("./router");
