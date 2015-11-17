@@ -1,7 +1,5 @@
 // Require all css
-//require("bootstrap-webpack");
-require("../css/bootstrap.css");
-require("../css/styles.css");
+require("../css/theme.less");
 
 // BootstrapJS
 require("../js/libs/bootstrap.js");

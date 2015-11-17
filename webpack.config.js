@@ -1,8 +1,6 @@
-var webpack = require('webpack');
-var path = require("path");
-
-// Use for separate CSS file compliled
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require('webpack'),
+        path = require("path"),
+        ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     context: path.resolve('js'),
@@ -15,7 +13,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.(woff|woff2|ttf|eot|svg)$/,
-                loader: "url-loader?limit=10000&mimetype=application/font-woff"
+                loader: "url-loader?limit=10000"
             },
             {
                 test: /\.less$/,
@@ -41,5 +39,6 @@ module.exports = {
             Backbone: "backbone",
             _: "underscore"
         }),
-        new ExtractTextPlugin("styles.css")]
+        new ExtractTextPlugin("styles.css")
+    ]
 };
