@@ -15,9 +15,14 @@ module.exports = {
     module: {
         loaders: [
             {
-                test:  /\.(otf|eot|png|jpg|svg|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                test: /\.(otf|eot|png|jpg|svg|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 exclude: [node_modules_dir],
                 loader: "url-loader?limit=8192"
+            },
+            {
+                test: /\.ejs$/,
+                exclude: [node_modules_dir],
+                loader: "ejs-loader"
             },
             {
                 test: /\.less$/,
