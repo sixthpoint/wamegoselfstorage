@@ -3,7 +3,7 @@
 $('a.page-scroll').bind('click', function (event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top
+        scrollTop: $($anchor.attr('href')).offset().top - 40
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
 });
@@ -47,3 +47,16 @@ function scrollY() {
 
 // On page load start by setting the bar
 scrollPage();
+
+// Rotate background image
+var seconds = 5000;
+var step = 1;
+var limit = 3;
+
+$("header").addClass("image-" + step).fadeIn(500);
+
+setInterval(function () {
+    $("header").removeClass("image-" + step);
+    step = (step > limit) ? 1 : step + 1;
+    $("header").addClass("image-" + step);
+}, seconds);

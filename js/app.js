@@ -24,8 +24,9 @@ var song2 = new Rate({unitSize: "How Bizarre", monthlyRate: 50, sqft: 250});
 var song3 = new Rate({unitSize: "How Bizarre", monthlyRate: 60, sqft: 350});
 
 var myRates = new Rates([song1, song2, song3]);
-var ratesView = new RatesView({el: $("#stuff"), collection:myRates})
-ratesView.render();
+var ratesView = new RatesView({collection:myRates})
+
+//$("#stuff").append(ratesView.render().el);
 
 console.log( myRates.models );
 

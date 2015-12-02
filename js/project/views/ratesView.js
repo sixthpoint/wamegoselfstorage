@@ -30,14 +30,15 @@ var RatesView = Backbone.View.extend({
     render: function () {
         this.$el.empty();
         var els = [];
-        this.collection.each(function(page) {
-            var pageview=new RateListItemView({ model: page });
-            var $tr=pageview.render().$el;  
+        this.collection.each(function (page) {
+            var pageview = new RateListItemView({model: page});
+            var $tr = pageview.render().$el;
             els.push($tr);
-        },this);
-        
-        $(this.el).html(els);
-        $("stuff").html(this.el);
+        }, this);
+
+        this.$el.append(els);
+
+        return this;
         //return this;
     }
 });

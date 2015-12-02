@@ -6,7 +6,7 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #999;
 }
 
 .text-primary {
@@ -54,21 +54,12 @@ h6 {
     margin: 0 auto;
 }
 
-.bg-light-gray {
-    background-color: #f7f7f7;
-}
 
-.bg-darkest-gray {
-    background-color: #222;
-}
+@btn-default-bg: #00CC00; 
+@btn-primary-border: #00CC00;
 
-.btn-primary {
-    border-color: #00CC00;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+.font-weight-700 {
     font-weight: 700;
-    color: #fff;
-    background-color: #00CC00;
 }
 
 .btn-primary:hover,
@@ -220,8 +211,8 @@ fieldset[disabled] .btn-primary.active {
 header {
     text-align: center;
     color: #fff;
+    background-color:#333;
     background-attachment: scroll;
-    background-image: url(../images/header-bg.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -230,7 +221,19 @@ header {
     -o-background-size: cover;
 }
 
-header .intro-text {
+.image-1 {
+    background-image: url(../images/header-bg.jpg);
+}
+
+.image-2 {
+    background-image: url(../images/header-bg.jpg);
+}
+
+.image-3 {
+    background-image: url(../images/header-bg.jpg);
+}
+
+.intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -263,7 +266,7 @@ header .intro-text h3 {
 }
 
 @media(min-width:768px) {
-    
+
     header .intro-text {
         padding-top: 200px;
         padding-bottom: 120px;
@@ -287,7 +290,7 @@ header .intro-text h3 {
 }
 
 section {
-    padding: 35px 0;
+    padding: 25px 0;
 }
 
 section h2.section-heading {
@@ -299,7 +302,6 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 50px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -307,7 +309,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 50px 0;
+        padding: 35px 0;
     }
 
     section h2.section-heading {
@@ -322,83 +324,6 @@ section h3.section-subheading {
     font-weight: 700;
     text-transform: none;
 }
-
-/*#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(254,209,54,.9);
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-    margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 400px;
-    text-align: center;
-    background-color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-caption h4 {
-    margin: 0;
-    text-transform: none;
-}
-
-#portfolio .portfolio-item .portfolio-caption p {
-    margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-}
-
-#portfolio * {
-    z-index: 2;
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}*/
 
 .timeline {
     position: relative;
@@ -647,6 +572,14 @@ section#rates .section-heading {
     color: #fff;
 }
 
+section#sales {
+    background-color: #222;
+}
+
+section#sales .section-heading {
+    color: #fff;
+}
+
 section#registration {
     background-color: #222;
 }
@@ -711,13 +644,24 @@ section#registration .text-danger {
 }
 
 footer {
-    padding: 25px 0;
+    padding: 12px 0;
     text-align: center;
 }
 
+footer a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color:#000;
+}
+
 footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer span.proudMember {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
@@ -840,20 +784,8 @@ ul.social-buttons li a:active {
 
 
 
-::-moz-selection {
-    text-shadow: none;
-    background: #00CC00;
-}
-
-::selection {
-    text-shadow: none;
-    background: #00CC00;
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
+#map-outer {height: 440px; padding: 20px;}
+#map-container { height: 400px }
+@media all and (max-width: 991px) {
+    #map-outer  { height: 650px }
 }
