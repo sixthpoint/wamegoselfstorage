@@ -283,17 +283,17 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <a href="http://www.columbiantheatre.com/main.asp" target="_blank">
-                            <img src="/img/columbiantheatre.png" class="img-responsive img-centered" alt="">
+                            <img src="/images/attractions/columbian.jpg" class="img-responsive img-centered" alt="">
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <a href="http://ozmuseum.com/" target="_blank">
-                            <img src="img/oz-logo.png" class="img-responsive img-centered" alt="">
+                            <img src="/images/attractions/ozlogo.jpg" class="img-responsive img-centered" alt="">
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <a href="#">
-                            <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                            <img src="/images/attractions/kansasriver.jpg" class="img-responsive img-centered" alt="">
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -444,8 +444,8 @@
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div id="map-outer" class="col-md-12">
-                        <div id="address" class="col-md-5">
+                    <div class="col-md-12">
+                        <div id="address" class="col-md-7 col-sm-6">
                             <h2>Wamego Self Storage</h2>
                             <address>
                                 West Highway 24<br>
@@ -455,21 +455,22 @@
                                 <abbr>E:</abbr> wamegoselfstorage@wamego.net
                             </address>
                         </div>
-                        
-                        <div id="address" class="col-md-5">
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">
-                                        <img class="img-responsive img-thumbnail" src="/images/tommie.jpg" alt="...">
-                                    </a>
+
+                        <div id="agent" class="col-md-5 col-sm-6 mar-top25">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <img class="img-responsive img-rounded" src="/images/tommie.jpg" alt="...">
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Tommie Karnowski</h4>
-                                    <p>Rental Agent</p>
+                                <div class="col-md-8 col-sm-6">
+                                    <h2 class="mar-top10">Tommie Karnowski</h2>
+                                    <h4><i>Rental Agent</i></h4>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-envelope"></i> Schedule an appt.</a>
                                 </div>
                             </div>
                         </div>
-                        <div id="map-container" class="col-md-12"></div>
+                        <div id="map-outer">
+                            <div id="map-container" class="col-md-12 clearfix"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -479,20 +480,21 @@
         <script>
 
             function init_map() {
-                var myLocation = new google.maps.LatLng(45.430817, 12.331516);
+                var myLocation = new google.maps.LatLng(39.210949, -96.316408);
 
                 var mapOptions = {
                     center: myLocation,
-                    zoom: 14
+                    zoom: 16,
+                    scrollwheel: false,
                 };
 
                 var marker = new google.maps.Marker({
                     position: myLocation,
-                    title: "Peggy Guggenheim Collection"});
+                    title: "Wamego Self Storage"});
 
                 var map = new google.maps.Map(document.getElementById("map-container"),
                         mapOptions);
-
+                        
                 marker.setMap(map);
 
             }
