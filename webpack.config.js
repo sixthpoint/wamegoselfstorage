@@ -41,7 +41,8 @@ module.exports = {
             jQuery: "jquery",
             "window.jQuery": "jquery",
             Backbone: "backbone",
-            _: "underscore"
+            _: "underscore",
+            google: "google-maps"
         }),
         new ExtractTextPlugin("styles.css")
     ]
