@@ -62,31 +62,7 @@ setInterval(function () {
 }, seconds);
 
 
-
-//function init_map() {
-//    var myLocation = new google.maps.LatLng(39.210949, -96.316408);
-//
-//    var mapOptions = {
-//        center: myLocation,
-//        zoom: 16,
-//        scrollwheel: false
-//    };
-//
-//    var marker = new google.maps.Marker({
-//        position: myLocation,
-//        title: "Wamego Self Storage"});
-//
-//    var map = new google.maps.Map(document.getElementById("map-container"),
-//            mapOptions);
-//
-//    marker.setMap(map);
-//
-//}
-//
-//google.maps.event.addDomListener(window, 'load', init_map);
-
 var GoogleMapsLoader = require('google-maps');
-
 GoogleMapsLoader.load(function (google) {
 
     var myLocation = new google.maps.LatLng(39.210949, -96.316408);
