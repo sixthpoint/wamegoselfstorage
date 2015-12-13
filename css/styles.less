@@ -1,12 +1,6 @@
-/* Global site specific configuration */
-
 body {
     overflow-x: hidden;
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-.text-muted {
-    color: #999;
 }
 
 .text-primary {
@@ -56,11 +50,8 @@ h6 {
 
 
 @btn-default-bg: #00CC00; 
+@btn-default-color: #FFF;
 @btn-primary-border: #00CC00;
-
-.font-weight-700 {
-    font-weight: 700;
-}
 
 .btn-primary:hover,
 .btn-primary:focus,
@@ -97,10 +88,6 @@ fieldset[disabled] .btn-primary.active {
     background-color: #00CC00;
 }
 
-.btn-primary .badge {
-    color: #00CC00;
-    background-color: #fff;
-}
 
 .btn-xl {
     padding: 10px 15px;
@@ -238,7 +225,7 @@ header {
 }
 
 
-.intro-text {
+header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -298,7 +285,7 @@ section {
     padding: 25px 0;
 }
 
-section h2.section-heading {
+section h2.section-heading, aside h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 30px;
@@ -317,14 +304,14 @@ section h3.section-subheading {
         padding: 35px 0;
     }
 
-    section h2.section-heading {
+    h2.section-heading {
         margin-top: 0;
         margin-bottom: 15px;
         font-size: 40px;
     }
 }
 
-.service-heading {
+section#advantages .service-heading {
     margin: 15px 0;
     font-weight: 700;
     text-transform: none;
@@ -436,6 +423,11 @@ section h3.section-subheading {
 
 .timeline .timeline-heading h4.subheading {
     text-transform: none;
+    font-weight: bold;
+}
+
+.timeline .timeline-heading h4.timeline-year {
+    color: #333;
 }
 
 .timeline .timeline-body>p,
@@ -530,44 +522,32 @@ section h3.section-subheading {
     }
 }
 
-.unitSizes {
+section#registration .question {
     color:#FFF;
     font-weight:bold;
+    font-style: italic;
     font-size: 20px;
     padding:0 0 10px 0;
     margin:0;
 }
 
-#sizeCheckbox {width:20px; height:20px; margin:2px 0 0 0; padding:0px;}
-
-.checkbox label {
-    font-size: 18px;
-    color:#FFF;
-    margin-left:25px;
+section#registration .checkbox-inline.no_indent,
+section#registration .checkbox-inline.no_indent+.checkbox-inline.no_indent {
+  margin-left: 0;
+  margin-right: 10px;
+  color:#FFF;
+  font-size: 16px;
 }
-
-.team-member {
-    margin-bottom: 50px;
-    text-align: center;
+section#registration .checkbox-inline.no_indent:last-child {
+  margin-right: 0;
 }
-
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #fff;
-}
-
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-.team-member p {
-    margin-top: 0;
-}
-
 aside.attractions img {
-    margin: 45px auto;
+    margin: 25px 0 0 0 auto;
+}
+
+aside.attractions {
+    border-top:1px dashed #CCC;
+    padding:25px 0;
 }
 
 section#rates {
@@ -579,7 +559,7 @@ section#rates .section-heading {
 }
 
 section#sales {
-    background-color: #222;
+    background-color: #333;
 }
 
 section#sales .section-heading {
@@ -648,6 +628,7 @@ section#registration .text-danger {
 footer {
     padding: 12px 0;
     text-align: center;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 footer a,
@@ -659,12 +640,10 @@ a.active {
 }
 
 footer span.copyright {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
 footer span.proudMember {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
@@ -672,33 +651,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #00CC00;
 }
 
 .btn:focus,
@@ -707,7 +660,7 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
-
+/*
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -782,22 +735,20 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
-}
+}*/
 
 
-
+// Google Maps
 #map-outer {height: 440px; clear:both;}
 #map-container { height: 400px; clear:both; }
 @media all and (max-width: 991px) {
     #map-outer  { height: 650px }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     // No reason to show map on tiny screen
     #map-outer  { display: none; }
 }
-
-
 
 
 
