@@ -1,4 +1,3 @@
-var template = require("../templates/table.ejs");
 var RateListItemView = require("../views/ratesListItemView.js");
 
 var RatesView = Backbone.View.extend({
@@ -39,7 +38,6 @@ var RatesView = Backbone.View.extend({
         this.$el.append(els);
 
         return this;
-        //return this;
     }
 });
 

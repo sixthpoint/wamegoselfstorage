@@ -19,16 +19,19 @@ var Rate = require("./project/models/RateModel.js");
 var Rates = require("./project/collections/RatesCollection.js");
 var RatesView = require("./project/views/ratesView.js");
 
-var song1 = new Rate({unitSize: "How Bizarre", monthlyRate: 45, sqft: 150});
-var song2 = new Rate({unitSize: "How Bizarre", monthlyRate: 50, sqft: 250});
-var song3 = new Rate({unitSize: "How Bizarre", monthlyRate: 60, sqft: 350});
+var rate1 = new Rate({unitSize: "5' x 10'", monthlyRate: "$45.00", sqft: 150});
+var rate2 = new Rate({unitSize: "10' x 10'", monthlyRate: "$62.00", sqft: 250});
+var rate3 = new Rate({unitSize: "15' x 10'", monthlyRate: "$73.00", sqft: 350});
+var rate4 = new Rate({unitSize: "20' x 10'", monthlyRate: "$85.00", sqft: 350});
+var rate5 = new Rate({unitSize: "25' x 10'", monthlyRate: "$95.00", sqft: 350});
+var rate6 = new Rate({unitSize: "25' x 50'", monthlyRate: "$675.00", sqft: 350});
 
-var myRates = new Rates([song1, song2, song3]);
-var ratesView = new RatesView({collection:myRates})
+var myRates = new Rates([rate1, rate2, rate3, rate4, rate5, rate6]);
+var ratesView = new RatesView({collection: myRates})
 
-//$("#stuff").append(ratesView.render().el);
+$("#rates-section").append(ratesView.render().el);
 
-console.log( myRates.models );
+console.log(myRates.models);
 
 // Load backboneJS router
 var Workspace = require("./router");

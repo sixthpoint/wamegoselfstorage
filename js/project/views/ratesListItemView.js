@@ -6,8 +6,9 @@ var RatesListItemView = Backbone.View.extend({
     events: {
         "click input[type=checkbox]": "publish"
     },
-    render: function (eventName) {
-        $(this.el).append(template);
+    render: function (model) {
+        console.log(model);
+        $(this.el).append(template(this.model.toJSON()));
         return this;
     },
     publish: function () {
