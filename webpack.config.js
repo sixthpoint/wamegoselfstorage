@@ -41,6 +41,7 @@ module.exports = {
             jQuery: "jquery",
             "window.jQuery": "jquery",
             Backbone: "backbone",
+            "Backbone.Validation": "backbone-validation",
             _: "underscore",
             google: "google-maps"
         }),

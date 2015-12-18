@@ -1,0 +1,120 @@
+<form name="sentMessage" id="contactForm" novalidate>
+                            <h4 class="question">1. Who is applying for the unit?</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Street Address *" id="street" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="City *" id="city" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control" id="state" required data-validation-required-message="Please enter your email address.">
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District Of Columbia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS" selected="selected">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>		
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h4 class="question">2. What sizes of units do you require?</h4>
+                                    <div class="clearfix mar-bot10">
+
+                                        <label class="checkbox-inline no_indent">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 5 x 10
+                                        </label>
+
+                                        <label class="checkbox-inline no_indent">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 10
+                                        </label>
+
+                                        <label class="checkbox-inline no_indent">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 15
+                                        </label>
+
+                                        <label class="checkbox-inline no_indent">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 20
+                                        </label>
+
+                                        <label class="checkbox-inline no_indent">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 25
+                                        </label>
+
+                                        <label class="checkbox-inline no_indent">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 50
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <p class="large text-muted">I understand that to secure the unit(s) I must visit the rental manager at Wamego Self Storage, complete the application, pay the deposit, and pick up a lock and key. Fill out the following to get the registration process started.</p>
+                                    <div id="success"></div>
+                                    <button type="submit" id="sendRegistration" class="btn btn-xl"><i class="fa fa-send"></i> Send Registration</button>
+                                </div>
+                            </div>
+                        </form>

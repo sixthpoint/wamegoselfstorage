@@ -107,7 +107,7 @@
 
         <section id="rates">
 
-           
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -117,53 +117,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                         <div id="rates-section"></div>
-<!--                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <tr>
-                                    <th>Unit Size</th>
-                                    <th>Monthly Rate</th>
-                                    <th>Square Ft</th>
-                                    <th>Preview</th>
-                                </tr>
-                                <tr>
-                                    <td>5' x 10' </td>
-                                    <td>$45.00</td>
-                                    <td>50 sqft</td>
-                                    <td><a href="#5x10" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>10' x 10' </td>
-                                    <td>$62.00</td>
-                                    <td>100 sqft</td>
-                                    <td><a href="#10x11"><i class="fa fa-search-plus"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>15' x 10' </td>
-                                    <td>$73.00</td>
-                                    <td>150 sqft</td>
-                                    <td><a href="#15x10" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>20' x 10' </td>
-                                    <td>$85.00</td>
-                                    <td>200 sqft</td>
-                                    <td><a href="#20x10" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>25' x 10' </td>
-                                    <td>$95.00</td>
-                                    <td>250 sqft</td>
-                                    <td><a href="#25x10" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>25' x 50' (office and storage) </td>
-                                    <td>$675.00</td>
-                                    <td>1250 sqft</td>
-                                    <td><a href="#25x50" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
-                                </tr>
-                            </table>
-                        </div>-->
+                        <div id="rates-section"></div>
                     </div>
                 </div>
             </div>
@@ -285,27 +239,27 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <form name="sentMessage" id="contactForm" novalidate>
+                    <div id="registrationForm" class="col-lg-12">
+                        <form role="form">
                             <h4 class="question">1. Who is applying for the unit?</h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name *">
+                                        <span class="help-block text-danger hidden"></span>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Street Address *" id="street" required data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="text" class="form-control" placeholder="Street Address *" id="street" name="street">
+                                        <span class="help-block text-danger hidden"></span>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="City *" id="city" required data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="text" class="form-control" placeholder="City *" id="city" name="city">
+                                        <span class="help-block text-danger hidden"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <select class="form-control" id="state" required data-validation-required-message="Please enter your email address.">
+                                        <select class="form-control" id="state" name="state">
                                             <option value="AL">Alabama</option>
                                             <option value="AK">Alaska</option>
                                             <option value="AZ">Arizona</option>
@@ -358,17 +312,17 @@
                                             <option value="WI">Wisconsin</option>
                                             <option value="WY">Wyoming</option>
                                         </select>		
-                                        <p class="help-block text-danger"></p>
+                                        <span class="help-block text-danger hidden"></span>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" name="email">
+                                        <span class="help-block text-danger hidden"></span>
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                        <p class="help-block text-danger"></p>
+                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="phone">
+                                        <span class="help-block text-danger hidden"></span>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="col-md-12">
                                     <h4 class="question">2. What sizes of units do you require?</h4>
                                     <div class="clearfix mar-bot10">
@@ -378,23 +332,23 @@
                                         </label>
 
                                         <label class="checkbox-inline no_indent">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 10
+                                            <input type="checkbox" id="inlineCheckbox2" value="option1"> 10 x 10
                                         </label>
 
                                         <label class="checkbox-inline no_indent">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 15
+                                            <input type="checkbox" id="inlineCheckbox3" value="option1"> 10 x 15
                                         </label>
 
                                         <label class="checkbox-inline no_indent">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 20
+                                            <input type="checkbox" id="inlineCheckbox4" value="option1"> 10 x 20
                                         </label>
 
                                         <label class="checkbox-inline no_indent">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 25
+                                            <input type="checkbox" id="inlineCheckbox5" value="option1"> 10 x 25
                                         </label>
 
                                         <label class="checkbox-inline no_indent">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 10 x 50
+                                            <input type="checkbox" id="inlineCheckbox6" value="option1"> 10 x 50
                                         </label>
                                     </div>
                                 </div>
@@ -402,12 +356,11 @@
                                 <div class="col-lg-12 text-center">
                                     <p class="large text-muted">I understand that to secure the unit(s) I must visit the rental manager at Wamego Self Storage, complete the application, pay the deposit, and pick up a lock and key. Fill out the following to get the registration process started.</p>
                                     <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl"><i class="fa fa-send"></i> Send Registration</button>
+                                    <button type="submit" id="sendRegistration" class="btn btn-xl"><i class="fa fa-send"></i> Send Registration</button>
                                 </div>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
